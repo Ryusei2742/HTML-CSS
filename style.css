@@ -3,6 +3,10 @@ body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4
   padding: 0;
 }
 
+.Wrapper {
+  overflow: hidden;
+}
+
 img {
   border: 0;
   vertical-align: middle;
@@ -81,6 +85,20 @@ html {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .header {
+    height: 48px;
+    padding: 0;
+  }
+}
+
 .header--common {
   box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.05);
 }
@@ -97,6 +115,13 @@ html {
   margin: 0 36px 0 36px;
   max-width: 100%;
   position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .HeaderContainer {
+    max-width: 100%;
+    margin: 0 16px;
+  }
 }
 
 .HeaderContainer>*:last-child {
@@ -119,6 +144,24 @@ html {
   width: auto;
 }
 
+@media screen and (max-width: 767px) {
+  .header-logo__image--pc {
+    display: none !important;
+  }
+}
+
+.header-logo__image--sp {
+  display: none;
+  height: 16px;
+  width: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .header-logo__image--sp {
+    display: block !important;
+  }
+}
+
 .hamburger-menu {
   display: none;
 }
@@ -132,6 +175,13 @@ html {
     height: 17px;
     margin: auto;
     z-index: 100;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .hamburger-menu {
+    height: 12px;
+    width: 18px;
   }
 }
 
@@ -212,6 +262,18 @@ html {
     background-color: rgba(0, 0, 0, 0.8);
     -webkit-overflow-scrolling: touch;
     height: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hamburger-list {
+    top: 70px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .hamburger-list {
+    top: 48px;
   }
 }
 
@@ -320,9 +382,21 @@ html {
   height: 739px;
 }
 
+@media screen and (max-width:767px) {
+  .first-img {
+    height: fit-content;
+  }
+}
+
 .first-img__bg-image {
   position: absolute;
   z-index: -1;
+}
+
+@media screen and (max-width:767px) {
+  .first-img__bg-image {
+    display: none;
+  }
 }
 
 .first-img__bg-image--left-rectangle {
@@ -346,6 +420,18 @@ html {
   width: 775px;
 }
 
+.first-img__whole-image {
+  display: none;
+}
+
+@media screen and (max-width:767px) {
+  .first-img__whole-image {
+    display: block;
+    margin-bottom: 7px;
+    width: 100%;
+  }
+}
+
 .first-img_container {
   max-width: 1040px;
   margin-left: auto;
@@ -359,6 +445,16 @@ html {
     max-width: none;
     padding-left: 36px;
     padding-right: 36px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .first-img_container {
+    padding-top: 0;
+    padding-bottom: 20px;
+    max-width: none;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -376,10 +472,28 @@ html {
   margin-bottom: 16px;
 }
 
+@media screen and (max-width: 767px) {
+  .first-img_title {
+    font-size: 22px;
+    line-height: 36px;
+    position: relative;
+    width: fit-content;
+  }
+}
+
 .first-img_badge {
   position: absolute;
   top: -105px;
   right: -150px;
+}
+
+@media screen and (max-width: 767px) {
+  .first-img_badge {
+    height: 102px;
+    width: 102px;
+    top: -20px;
+    right: -85px;
+  }
 }
 
 .first-img_button {
@@ -405,6 +519,12 @@ html {
   color: #fff;
 }
 
+@media screen and (max-width: 767px) {
+  .first-img_button {
+    width: 100% !important;
+  }
+}
+
 .first-img_caption {
   font-size: 12px;
   line-height: 16px;
@@ -419,6 +539,12 @@ html {
 /* POTEPAN CAMPとは */
 .aboutwrapper {
   padding: 0 0 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .aboutwrapper {
+    padding: 40px 0;
+  }
 }
 
 .about {
@@ -436,6 +562,14 @@ html {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .about {
+    max-width: none;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 .about_title {
   align-items: center;
   display: flex;
@@ -444,12 +578,33 @@ html {
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .about_title {
+    margin-bottom: 40px;
+  }
+}
+
 .about_title h2 {
   font-family: "Lato", sans-serif;
   font-size: 38px;
   font-weight: 700;
   line-height: 54px;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .about_title h2 {
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+    word-break: keep-all;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about_title br {
+    display: block !important;
+  }
 }
 
 .about_title::after {
@@ -466,6 +621,14 @@ html {
   gap: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .about_container {
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
 .about_point {
   align-items: center;
   background-color: #F4F5F7;
@@ -474,6 +637,14 @@ html {
   gap: 16px;
   padding: 40px 0;
   width: 33.333%;
+}
+
+@media screen and (max-width: 767px) {
+  .about_point {
+    padding: 46px 0;
+    max-width: 350px;
+    width: 100%;
+  }
 }
 
 .about_point__image {
@@ -509,6 +680,13 @@ html {
   margin-bottom: 60px;
 }
 
+@media screen and (max-width: 767px) {
+  .system_paragraph {
+    margin-bottom: 0;
+    padding: 40px 0;
+  }
+}
+
 .system {
   max-width: 1040px;
   margin-left: auto;
@@ -524,6 +702,15 @@ html {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .system {
+    max-width: 414px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 .system_title {
   align-items: center;
   display: flex;
@@ -532,12 +719,37 @@ html {
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .system_title {
+    margin-bottom: 40px;
+  }
+}
+
 .system_title h2 {
   font-family: "Lato", sans-serif;
   font-size: 38px;
   font-weight: 700;
   line-height: 54px;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .system_title h2 {
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+    word-break: keep-all;
+  }
+}
+
+.system_title br {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .system_title br {
+    display: block;
+  }
 }
 
 .system_title::after {
@@ -554,6 +766,12 @@ html {
   gap: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .system_detail {
+    display: unset;
+  }
+}
+
 .system_detail_image {
   position: relative;
   width: 50%;
@@ -567,12 +785,24 @@ html {
   z-index: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .system_detail_bgimage {
+    display: none;
+  }
+}
+
 .system_detail_main_image {
   opacity: 0;
   transition: opacity 0.5s ease;
   width: 100%;
   position: absolute;
   top: -15px;
+}
+
+@media screen and (max-width: 767px) {
+  .system_detail_main_image {
+    display: none;
+  }
 }
 
 .system_detail_main_image--active {
@@ -587,6 +817,12 @@ html {
   top: -15px;
 }
 
+@media screen and (max-width: 767px) {
+  .system_detail_ai_image {
+    display: none;
+  }
+}
+
 .system_detail_point {
   flex: 1;
 }
@@ -597,6 +833,14 @@ html {
   cursor: pointer;
   margin-bottom: 10px;
   padding: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .system_detail_point-item {
+    background-color: #F4F5F7;
+    margin-bottom: 10px;
+    pointer-events: none;
+  }
 }
 
 .system_detail_point-item--active {
@@ -612,16 +856,50 @@ html {
   margin-bottom: 8px;
 }
 
+@media screen and (max-width: 767px) {
+  .system_detail_point-item__title {
+    color: #333;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+  }
+}
+
+.system_detail_point-item__image {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .system_detail_point-item__image {
+    display: block;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+}
+
 .system_detail_point-item__description {
   color: #333;
   font-size: 14px;
   line-height: 21px;
 }
 
+@media screen and (max-width: 767px) {
+  .system_detail_point-item__description {
+    color: #333;
+    line-height: 18px;
+  }
+}
+
 /* 提携企業 */
 .partnercorporationwrapper {
   padding: 60px 0;
   background-color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .partnercorporationwrapper {
+    padding: 40px 0;
+  }
 }
 
 .partnercorporation {
@@ -639,12 +917,27 @@ html {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .partnercorporation {
+    max-width: 414px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 .partnercorporation_title {
   align-items: center;
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
   width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .partnercorporation_title {
+    margin-bottom: 40px;
+  }
 }
 
 .partnercorporation_title h2 {
@@ -655,8 +948,23 @@ html {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .partnercorporation_title h2 {
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+    word-break: keep-all;
+  }
+}
+
 .partnercorporation_title br {
   display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .partnercorporation_title br {
+    display: block !important;
+  }
 }
 
 .partnercorporation_title::after {
@@ -681,6 +989,12 @@ html {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 767px) {
+  .partnercorporation_detail {
+    flex-direction: column;
+  }
+}
+
 .partnercorporation_list {
   border-right: 1px solid #e0e0e0;
   display: flex;
@@ -691,19 +1005,52 @@ html {
   padding: 54px 60px;
 }
 
+@media screen and (max-width: 767px) {
+  .partnercorporation_list {
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    gap: 23px;
+    padding: 20px;
+  }
+}
+
 .partnercorporation_listitem {
   display: grid;
   place-content: center;
   width: calc((100% / 3 ) - 34px);
 }
 
+@media screen and (max-width: 767px) {
+  .partnercorporation_listitem {
+    width: calc((100% / 2 ) - 23px);
+  }
+}
+
 .partnercorporation_listitem>img {
   width: 100%;
+}
+
+.sm-hidden {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .sm-hidden {
+    display: none !important;
+  }
 }
 
 .partnercorporation_merit {
   padding: 24px 40px 40px;
   width: 242px;
+}
+
+@media screen and (max-width: 767px) {
+  .partnercorporation_merit {
+    margin: auto;
+    padding: 16px;
+    width: fit-content;
+  }
 }
 
 .partnercorporation_merit-title {
@@ -713,12 +1060,34 @@ html {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .partnercorporation_merit-title {
+    margin-bottom: 16px;
+  }
+}
+
 .partnercorporation_merit-list {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .partnercorporation_merit-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px 16px;
+  }
+}
+
 .partnercorporation_merit-listitem {
   margin-bottom: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .partnercorporation_merit-listitem {
+    margin-bottom: 0;
+    width: calc(50% - 16px);
+  }
 }
 
 .partnercorporation_merit-listitem-number {
@@ -745,6 +1114,12 @@ html {
   gap: 24px;
 }
 
+@media screen and (max-width: 767px) {
+  .partnercorporation_reviews {
+    flex-direction: column;
+  }
+}
+
 .partnercorporation_review {
   align-items: center;
   background-color: #F4F5F7;
@@ -756,12 +1131,27 @@ html {
   width: 50%;
 }
 
+@media screen and (max-width: 767px) {
+  .partnercorporation_review {
+    flex-direction: column-reverse;
+    gap: 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+
 .partnercorporation_reviewimage {
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 8px;
   width: 160px;
+}
+
+@media screen and (max-width: 767px) {
+  .partnercorporation_reviewimage {
+    width: 100%;
+  }
 }
 
 .partnercorporation_reviewimage>img {
@@ -783,6 +1173,12 @@ html {
 
 .partnercorporation_reviewcomment-description--sp {
   display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .partnercorporation_reviewcomment-description--sp {
+    display: block !important;
+  }
 }
 
 .partnercorporation_reviewcomment {
@@ -811,6 +1207,16 @@ html {
   margin-bottom: 8px;
 }
 
+.partnercorporation_reviewcomment-title br {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .partnercorporation_reviewcomment-title br {
+    display: block !important;
+  }
+}
+
 .partnercorporation_reviewcomment-description {
   font-size: 12px;
   line-height: 16px;
@@ -821,6 +1227,12 @@ html {
   display: block;
 }
 
+@media screen and (max-width: 767px) {
+  .partnercorporation_reviewcomment-description--pc {
+    display: none;
+  }
+}
+
 .partnercorporation_reviewcomment-tag--corporation {
   background-color: #000;
 }
@@ -829,6 +1241,12 @@ html {
 .SupportWrapper {
   padding: 60px 0;
   background-color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .SupportWrapper {
+    padding: 40px 0;
+  }
 }
 
 .support {
@@ -846,12 +1264,26 @@ html {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .support {
+    max-width: none;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 .support_title {
   align-items: center;
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
   width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .support_title {
+    margin-bottom: 40px;
+  }
 }
 
 .support_title h2 {
@@ -862,8 +1294,23 @@ html {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .support_title h2 {
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+    word-break: keep-all;
+  }
+}
+
 .support_title br {
   display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .support_title br {
+    display: block !important;
+  }
 }
 
 .support_title::after {
@@ -878,6 +1325,17 @@ html {
   display: flex;
   gap: 24px;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .support_list {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto 40px;
+    max-width: 414px;
+    width: 100%;
+  }
 }
 
 .support_list-item {
@@ -927,6 +1385,12 @@ html {
   margin-bottom: 8px;
   padding-left: 8px;
   position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .support-point-item {
+    margin-bottom: 0;
+  }
 }
 
 .support-point-item::before {
@@ -1014,6 +1478,18 @@ html {
   padding: 23px 40px;
 }
 
+@media screen and (max-width: 767px) {
+  .support_interview_section {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    max-width: 414px;
+    width: 100%;
+    padding: 20px;
+  }
+}
+
 .support_interview_question {
   font-family: "Lato", sans-serif;
   font-size: 25px;
@@ -1024,6 +1500,12 @@ html {
 
 .support_interview_question--sp {
   display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .support_interview_question--sp {
+    display: block;
+  }
 }
 
 .support_interview-image {
@@ -1049,6 +1531,12 @@ html {
   display: block;
 }
 
+@media screen and (max-width: 767px) {
+  .support_interview_question--pc {
+    display: none;
+  }
+}
+
 .support_interview_answer {
   font-size: 14px;
   line-height: 18px;
@@ -1060,6 +1548,13 @@ html {
   background-color: #fff;
   margin-bottom: 60px;
   padding-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .blogswrapper {
+    margin-bottom: 0;
+    padding: 40px 0 0 0;
+  }
 }
 
 .blogs {
@@ -1077,12 +1572,26 @@ html {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .blogs {
+    max-width: none;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 .blogs_title {
   align-items: center;
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
   width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .blogs_title {
+    margin-bottom: 40px;
+  }
 }
 
 .blogs_title h2 {
@@ -1093,6 +1602,15 @@ html {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .blogs_title h2 {
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+    word-break: keep-all;
+  }
+}
+
 .blogs_title p {
   display: inline-block;
   font-size: 21px;
@@ -1100,6 +1618,23 @@ html {
   line-height: 28px;
   margin-bottom: 10px;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .blogs_title p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+.blogs_title br {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .blogs_title br {
+    display: block !important;
+  }
 }
 
 .blogs_title::after {
@@ -1115,8 +1650,22 @@ html {
   gap: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .bloglist {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
 .bloglist-item {
   width: 33.3%;
+}
+
+@media screen and (max-width: 767px) {
+  .bloglist-item {
+    width: 100%;
+    max-width: 441px;
+  }
 }
 
 .bloglist-item__image-wrapper {
@@ -1161,6 +1710,13 @@ html {
   }
 }
 
+@media screen and (max-width:767px) {
+  .MessageWrapper {
+    max-width: none;
+    padding: 40px 16px;
+  }
+}
+
 .MessageContainer {
   align-items: center;
   background-color: #F4F5F7;
@@ -1171,13 +1727,44 @@ html {
   padding: 41.65px 37.5px;
 }
 
+@media screen and (max-width:767px) {
+  .MessageContainer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:414px) {
+  .MessageContainer {
+    gap: 20px;
+    padding: 16px;
+  }
+}
+
 .MessageContainer__image {
   width: 40%;
   max-width: 441px;
 }
 
+@media screen and (max-width:767px) {
+  .MessageContainer__image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:414px) {
+  .MessageContainer__image {
+    padding: 15px 15px 0 15px;
+  }
+}
+
 .Message {
   padding-right: 21.5px;
+}
+
+@media screen and (max-width:767px) {
+  .Message {
+    padding-right: 0;
+  }
 }
 
 .Message__title {
@@ -1186,6 +1773,14 @@ html {
   font-weight: 700;
   line-height: 54px;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width:414px) {
+  .Message__title {
+    font-size: 21px;
+    line-height: 33px;
+    margin-bottom: 10px;
+  }
 }
 
 .Message__body {
@@ -1198,6 +1793,12 @@ html {
 .CourseListWrapper {
   padding: 60px 0;
   background-color: #f4f5f7;
+}
+
+@media screen and (max-width:767px) {
+  .CourseListWrapper {
+    padding: 40px 0;
+  }
 }
 
 .CourseList {
@@ -1215,6 +1816,14 @@ html {
   }
 }
 
+@media screen and (max-width:767px) {
+  .CourseList {
+    max-width: none;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 .CourseList__title {
   align-items: center;
   display: flex;
@@ -1222,6 +1831,12 @@ html {
   margin-bottom: 60px;
   width: 100%;
   position: relative;
+}
+
+@media screen and (max-width:767px) {
+  .CourseList__title {
+    margin-bottom: 40px;
+  }
 }
 
 .CourseList__title h2 {
@@ -1232,6 +1847,15 @@ html {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width:767px) {
+  .CourseList__title h2 {
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+    word-break: keep-all;
+  }
+}
+
 .CourseList__title p {
   display: inline-block;
   font-size: 21px;
@@ -1239,6 +1863,13 @@ html {
   line-height: 28px;
   margin-bottom: 10px;
   text-align: center;
+}
+
+@media screen and (max-width:767px) {
+  .CourseList__title p {
+    font-size: 16px;
+    line-height: 21px;
+  }
 }
 
 .CourseList__title::after {
@@ -1262,6 +1893,13 @@ html {
   padding: 45px;
 }
 
+@media screen and (max-width:767px) {
+  .CourseListItem__link {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
 .CourseNameSection__title {
   font-size: 25px;
   line-height: 32px;
@@ -1277,9 +1915,25 @@ html {
   width: 30%;
 }
 
+@media screen and (max-width:767px) {
+  .CourseNameSection {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
 .CourseContentSection {
   position: relative;
   width: calc(70% + 30px);
+}
+
+@media screen and (max-width:767px) {
+  .CourseContentSection {
+    margin-top: 25px;
+    padding-right: 0;
+    width: 100%;
+  }
 }
 
 .CourseContentSection__description {
@@ -1319,9 +1973,13 @@ html {
   bottom: -5px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (max-width:767px) {
   .CourseContentSection__link {
     transition: 0.2s;
+    margin-top: 25px;
+    padding-right: 20px;
+    position: static;
+    text-align: right;
   }
 }
 
@@ -1337,9 +1995,22 @@ html {
   width: 8px;
 }
 
+@media screen and (max-width:767px) {
+  .CourseContentSection__link::after {
+    bottom: 9px;
+    right: 0;
+  }
+}
+
 .AboutSubsidyApplication {
   background-color: #fff;
   padding: 20px;
+}
+
+@media screen and (max-width:414px) {
+  .AboutSubsidyApplication {
+    padding: 8px;
+  }
 }
 
 .AboutSubsidyApplication__title {
@@ -1361,8 +2032,20 @@ html {
     margin-bottom: 24px;
 }
 
+@media screen and (max-width:767px) {
+  .SubsidyIntroduction {
+    flex-direction: column;
+  }
+}
+
 .SubsidyIntroduction__logo {
     width: 248px;
+}
+
+@media screen and (max-width:767px) {
+  .SubsidyIntroduction__logo {
+    margin: auto;
+  }
 }
 
 .SubsidyIntroduction__body>p:first-of-type {
@@ -1409,12 +2092,31 @@ html {
   margin-bottom: 16px;
 }
 
+@media screen and (max-width:767px) {
+  .CourseFeeWithSubsidy__images {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
 .CourseFeeWithSubsidy__discount--pc {
   display: block;
 }
 
+@media screen and (max-width:767px) {
+  .CourseFeeWithSubsidy__discount--pc {
+    display: none;
+  }
+}
+
 .CourseFeeWithSubsidy__discount--sp {
   display: none;
+}
+
+@media screen and (max-width:767px) {
+  .CourseFeeWithSubsidy__discount--sp {
+    display: block;
+  }
 }
 
 .CourseFeeWithSubsidy__amount {
@@ -1478,6 +2180,18 @@ html {
 .SubsidyConditionList__item {
   align-items: center;
   display: flex;
+}
+
+@media screen and (max-width:767px) {
+  .SubsidyConditionList__item:first-of-type {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .SubsidyConditionList__item {
+    align-items: flex-start;
+  }
 }
 
 .SubsidyConditionList__marker {
@@ -1582,6 +2296,12 @@ html {
   padding: 60px 0;
 }
 
+@media screen and (max-width:767px) {
+  .ComparisonTableWrapper {
+    padding: 40px 0;
+  }
+}
+
 .ComparisonTableSection {
   max-width: 1040px;
   margin-left: auto;
@@ -1597,12 +2317,26 @@ html {
   }
 }
 
+@media screen and (max-width:767px) {
+  .ComparisonTableSection {
+    max-width: none;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 .ComparisonTableSection__title {
   align-items: center;
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
   width: 100%;
+}
+
+@media screen and (max-width:767px) {
+  .ComparisonTableSection__title {
+    margin-bottom: 40px;
+  }
 }
 
 .ComparisonTableSection__title h2 {
@@ -1613,13 +2347,29 @@ html {
   margin-bottom: 10px;
 }
 
-.ComparisonTableSection__title  p {
+@media screen and (max-width:767px) {
+  .ComparisonTableSection__title h2 {
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+    word-break: keep-all;
+  }
+}
+
+.ComparisonTableSection__title p {
   display: inline-block;
   font-size: 21px;
   font-weight: 700;
   line-height: 28px;
   margin-bottom: 10px;
   text-align: center;
+}
+
+@media screen and (max-width:767px) {
+  .ComparisonTableSection__title p {
+    font-size: 16px;
+    line-height: 21px;
+  }
 }
 
 .ComparisonTableSection__title::after {
@@ -1645,7 +2395,7 @@ html {
   }
 }
 
-.ComparisonTableSection__scroll_message img {
+.ComparisonTableSection__scroll_message>img {
   height: 18px;
   margin-left: 4px;
   width: 18px;
@@ -1665,6 +2415,18 @@ html {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .ComparisonTableContainer {
+    height: 1034px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .ComparisonTableContainer {
+    margin: 0 auto 30px;
+  }
+}
+
 .ComparisonTable {
   border-radius: 10px;
   box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.05);
@@ -1678,6 +2440,13 @@ html {
   }
 }
 
+@media screen and (max-width: 414px) {
+  .ComparisonTable {
+    box-shadow: none;
+    width: 614px;
+  }
+}
+
 .ComparisonTable tr {
   height: 108px;
 }
@@ -1686,8 +2455,20 @@ html {
   height: 60px;
 }
 
+@media screen and (max-width: 414px) {
+  .ComparisonTable tr:first-of-type th:first-of-type {
+    width: 100px;
+  }
+}
+
 .ComparisonTable tr th, .ComparisonTable tr td {
   width: 200px;
+}
+
+@media screen and (max-width: 414px) {
+  .ComparisonTable tr th, .ComparisonTable tr td {
+    width: 132px;
+  }
 }
 
 .ComparisonTable tr th  {
@@ -1696,9 +2477,22 @@ html {
   line-height: 26px;
 }
 
+@media screen and (max-width: 414px) {
+  .ComparisonTable tr th {
+    padding: 16px;
+    width: 100px;
+  }
+}
+
 .ComparisonTable tr:first-of-type th {
   font-size: 21px;
   line-height: 28px;
+}
+
+@media screen and (max-width: 414px) {
+  .ComparisonTable tr:first-of-type th {
+    text-align: center;
+  }
 }
 
 .ComparisonTable tr:nth-child(odd) th, .ComparisonTable tr:nth-child(odd) td {
@@ -1748,6 +2542,11 @@ html {
   text-align: center;
 }
 
+.ComparisonTableData__price--ours {
+  font-size: 25px;
+  line-height: 32px;
+}
+
 .EmphasizeCircle {
   border: 4px solid #f79214;
   border-radius: 10px;
@@ -1756,6 +2555,13 @@ html {
   top: 0;
   left: 200px;
   width: 300px;
+}
+
+@media screen and (max-width: 414px) {
+  .EmphasizeCircle {
+    left: 100px;
+    width: 250px;
+  }
 }
 
 .ComparisonTableSection__link-button {
@@ -1780,6 +2586,14 @@ html {
 @media screen and (min-width: 768px) {
   .ComparisonTableSection__link-button {
     transition: opacity 0.2s;
+    margin: 30px auto 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ComparisonTableSection__link-button {
+    max-width: 300px;
+    width: 100%;
   }
 }
 
@@ -1787,10 +2601,28 @@ html {
   color: #fff;
 }
 
+.ComparisonTableSection__link-button span:first-child {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.ComparisonTableSection__link-button span:last-child {
+  font-size: 12px;
+  line-height: 18px;
+}
+
 /* 他コースのご案内 */
 .OtherCoursesWrapper {
   padding: 60px 0;
   padding-bottom: 120px;
+}
+
+@media screen and (max-width: 767px) {
+  .OtherCoursesWrapper {
+    padding: 40px 0;
+  }
 }
 
 .OtherCoursesSection {
@@ -1808,12 +2640,26 @@ html {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .OtherCoursesSection {
+    max-width: none;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 .OtherCoursesSection__title {
   align-items: center;
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
   width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .OtherCoursesSection__title {
+    margin-bottom: 40px;
+  }
 }
 
 .OtherCoursesSection__title h2 {
@@ -1824,6 +2670,25 @@ html {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .OtherCoursesSection__title h2 {
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+    word-break: keep-all;
+  }
+}
+
+.OtherCoursesSection__title br {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .OtherCoursesSection__title br {
+    display: block !important;
+  }
+}
+
 .OtherCoursesSection__title p {
   display: inline-block;
   font-size: 21px;
@@ -1831,6 +2696,13 @@ html {
   line-height: 28px;
   margin-bottom: 10px;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .OtherCoursesSection__title p {
+    font-size: 16px;
+    line-height: 21px;
+  }
 }
 
 .OtherCoursesSection__title::after {
@@ -1865,6 +2737,17 @@ html {
 @media screen and (max-width: 1080px) {
   .OtherCoursesDetails {
     width: 508px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .OtherCoursesDetails {
+    grid-template-columns: unset;
+    justify-items: center;
+    padding: 24px;
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
   }
 }
 
@@ -1942,6 +2825,12 @@ html {
   display: block;
 }
 
+@media screen and (max-width: 767px) {
+  .OtherCoursesIntroduction__title br {
+    display: none !important;
+  }
+}
+
 .OtherCoursesIntroduction__link {
   color: #999;
   font-size: 14px;
@@ -1959,6 +2848,15 @@ html {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .OtherCoursesIntroduction__link {
+    margin-top: 0;
+    position: relative;
+    padding-right: 20px;
+    text-align: right;
+  }
+}
+
 .OtherCoursesIntroduction__link::after {
   content: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/common/chevron-right.jpg);
   display: inline-block;
@@ -1969,6 +2867,13 @@ html {
   right: -15px;
   transform: scale(0.4);
   width: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .OtherCoursesIntroduction__link::after {
+    bottom: 9px;
+    right: 0;
+  }
 }
 
 
@@ -1982,16 +2887,40 @@ html {
   z-index: 10;
 }
 
+@media screen and (max-width: 428px) {
+  .FixedFooter {
+    background-color: #F4F5F7;
+    bottom: 0;
+    height: 114px;
+    right: 0;
+    width: 100%;
+  }
+}
+
 .FixedFooter img {
   cursor: pointer;
   display: block;
   max-width: 375px;
 }
 
+@media screen and (max-width: 428px) {
+  .FixedFooter img {
+    margin: 8px auto 0;
+    max-width: unset;
+    width: 100%;
+  }
+}
+
 .Footer {
   padding-top: 80px;
   padding-bottom: 40px;
   background-color: #f79314;
+}
+
+@media screen and (max-width: 767px) {
+  .Footer {
+    padding: 40px 0;
+  }
 }
 
 .FooterContainer {
@@ -2018,9 +2947,31 @@ html {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .FooterContainer {
+    display: block;
+    text-align: center;
+    max-width: none;
+  }
+}
+
 .FooterList {
   margin-right: 20px;
   order: 2;
+}
+
+@media screen and (max-width: 767px) {
+  .FooterList {
+    text-align: left;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .FooterContainer ul.FooterList {
+    display: none;
+  }
 }
 
 .FooterList__item {
@@ -2028,6 +2979,12 @@ html {
   font-size: 18px;
   font-weight: 700;
   margin-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .FooterList__item {
+    margin-top: 25px;
+  }
 }
 
 .FooterList__item:first-of-type {
@@ -2049,10 +3006,22 @@ html {
   order: 3;
 }
 
+@media screen and (max-width: 767px) {
+  .FooterListAndCharacter {
+    margin-top: 0;
+  }
+}
+
 .FooterListAndCharacter__character {
   display: block;
   margin: 80px 0 0 auto;
   width: 152px;
+}
+
+@media screen and (max-width: 767px) {
+  .FooterListAndCharacter__character {
+    margin: 0 auto 34px;
+  }
 }
 
 .FooterInfo {
@@ -2068,6 +3037,14 @@ html {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .FooterInfo {
+    border-top: 1px solid #fff;
+    margin-right: 0;
+    padding-top: 35px;
+  }
+}
+
 .FooterInfo__logo {
   display: inline-block;
   max-width: 280px;
@@ -2076,6 +3053,14 @@ html {
 @media screen and (min-width: 768px) {
   .FooterInfo__logo {
     transition: opacity 0.2s;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .FooterInfo__logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -2091,11 +3076,25 @@ html {
   margin-top: 15px;
 }
 
+@media screen and (max-width: 767px) {
+  .FooterInfo__company-name {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
 .FooterInfo__address {
   color: #fff;
   font-size: 16px;
   font-weight: 700;
   margin-top: 35px;
+}
+
+@media screen and (max-width: 767px) {
+  .FooterInfo__address {
+    margin-top: 8px;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -2107,6 +3106,12 @@ html {
 .FooterSocialList {
   display: flex;
   margin: 35px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .FooterSocialList {
+    justify-content: center;
+  }
 }
 
 .FooterSocialList__item {

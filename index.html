@@ -5,9 +5,11 @@
     <meta charset="utf-8" />
     <title>サイト模写</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width">
   </head>
 
   <body>
+    <div class="Wrapper">
     <header class="header header--common">
       <div class="HeaderContainer">
         <a class="header-logo" href="https://camp.potepan.com/">
@@ -15,6 +17,11 @@
             src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/header-logo.png"
             alt="POTEPAN CAMP"
             class="header-logo__image header-logo__image--pc lazy loaded"
+          />
+          <img
+            src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/header-logo-sp.png"
+            alt="POTEPAN CAMP"
+            class="header-logo__image header-logo__image--sp lazy loaded"
           />
         </a>
         <nav class="header-nav">
@@ -105,6 +112,12 @@
           alt="男性"
           class="first-img__bg-image first-img__bg-image--main-visual lazy loaded"
         />
+
+        <img
+          src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/whole-visual.webp"
+          alt="男性"
+          class="first-img__whole-image lazy loaded"
+        />
         <div class="first-img_container">
           <div class="first-img_content">
             <h2 class="first-img_title">
@@ -186,7 +199,9 @@
         <section class="system">
           <div class="system_title">
             <h2>
-              学習効率がグンと上がるAI搭載学習システム
+              学習効率がグンと上がる
+              <br>
+              AI搭載学習システム
             </h2>
           </div>
           <div class="system_detail">
@@ -215,18 +230,21 @@
             <ul class="system_detail_point">
               <li class="system_detail_point-item system_detail_point-item--active">
                 <h3 class="system_detail_point-item__title">AI Chat</h3>
+                <img class="system_detail_point-item__image lazy loaded" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/learning-system/aichat.png" alt="AIチャット">
                 <p class="system_detail_point-item__description">
                   今まで先生に手をあげて質問していた様な事が、ポテパンキャンプでは気になる部分を選択するだけですぐにAIに質問して解決する事ができます。
                 </p>
               </li>
               <li>
                 <h3 class="system_detail_point-item__title">エディター＆AIコードレビュー</h3>
+                <img class="system_detail_point-item__image lazy loaded" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/learning-system/editor.png" alt="エディター&AIコードレビュー">
                 <p class="system_detail_point-item__description">
                   カリキュラムで学習したことを画面を切り替えずにすぐに試すことが可能です。また、書いたコードをAIにレビューしてもらうことで良質なフィードバックを貰えます。
                 </p>
               </li>
               <li>
                 <h3 class="system_detail_point-item__title">解説動画</h3>
+                <img class="system_detail_point-item__image lazy" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/learning-system/tutorial.png" alt="解説動画">
                 <p class="system_detail_point-item__description">
                   テキストだけでは理解が難しいポイントには解説動画をご用意しております。
                 </p>
@@ -308,28 +326,28 @@
                   alt="紹介先企業8"
                 />
               </li>
-              <li class="partnercorporation_listitem">
+              <li class="partnercorporation_listitem sm-hidden">
                 <img
                   class="lazy loaded"
                   src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/partner-corporation/10.png"
                   alt="紹介先企業9"
                 />
               </li>
-              <li class="partnercorporation_listitem">
+              <li class="partnercorporation_listitem sm-hidden">
                 <img
                   class="lazy loaded"
                   src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/partner-corporation/17.png"
                   alt="紹介先企業10"
                 />
               </li>
-              <li class="partnercorporation_listitem">
+              <li class="partnercorporation_listitem sm-hidden">
                 <img
                   class="lazy loaded"
                   src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/partner-corporation/18.png"
                   alt="紹介先企業11"
                 />
               </li>
-              <li class="partnercorporation_listitem">
+              <li class="partnercorporation_listitem sm-hidden">
                 <img
                   class="lazy loaded"
                   src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/partner-corporation/19.png"
@@ -413,7 +431,9 @@
                   >卒業生の声</span
                 >
                 <h3 class="partnercorporation_reviewcomment-title">
-                  提携企業が多いからスピード内定が実現
+                  提携企業が多いから
+                  <br>
+                  スピード内定が実現
                 </h3>
                 <p
                   class="partnercorporation_reviewcomment-description partnercorporation_reviewcomment-description--pc"
@@ -445,7 +465,9 @@
                   >採用企業の声</span
                 >
                 <h3 class="partnercorporation_reviewcomment-title">
-                  入社直後からキャッチアップが非常にはやい
+                  入社直後から
+                  <br>
+                  キャッチアップが非常にはやい
                 </h3>
                 <p
                   class="partnercorporation_reviewcomment-description partnercorporation_reviewcomment-description--pc"
@@ -567,7 +589,9 @@
           <div class="blogs_title">
             <h2>ブログ</h2>
             <p>
-              企業様のインタビューや運営会社の裏側を発信
+              企業様のインタビューや
+              <br>
+              運営会社の裏側を発信
             </p>
           </div>
           <ul class="bloglist">
@@ -999,11 +1023,11 @@
                         class="lazy loaded"
                       />
                       <span class="ComparisonTableData__point">
-                        "ポートフォリオ対策"
+                        ポートフォリオ対策
                         <br />
-                        "面接練習"
+                        面接練習
                         <br />
-                        "提携求人紹介"
+                        提携求人紹介
                       </span>
                     </div>
                   </td>
@@ -1015,9 +1039,9 @@
                         class="lazy loaded"
                       />
                       <span>
-                        "面接練習"
+                        面接練習
                         <br />
-                        "提携求人紹介"
+                        提携求人紹介
                       </span>
                     </div>
                   </td>
@@ -1042,7 +1066,7 @@
                         class="lazy loaded"
                       />
                       <span class="ComparisonTableData__price--ours">
-                        "440,000"
+                        440,000
                         <span class="ComparisonTableData__tax">円</span>
                       </span>
                     </div>
@@ -1086,7 +1110,9 @@
         <section class="OtherCoursesSection">
           <div class="OtherCoursesSection__title">
             <h2>
-              無料で学べる体験コースのご案内
+              無料で学べる
+              <br>
+              体験コースのご案内
             </h2>
             <p>気軽にポテパンキャンプのカリキュラムを体験</p>
           </div>
@@ -1117,7 +1143,7 @@
                   </p>
                   <h3 class="OtherCoursesIntroduction__title">
                     生成AI活用
-                    <br />
+                    <br/>
                     コース
                   </h3>
                   <p class="OtherCoursesIntroduction__link">
@@ -1152,7 +1178,7 @@
                   </p>
                   <h3 class="OtherCoursesIntroduction__title">
                     Webサイト制作
-                    <br />
+                    <br/>
                     コース
                   </h3>
                   <p class="OtherCoursesIntroduction__link">
@@ -1339,5 +1365,6 @@
       async=""
       src="https://camp.potepan.com/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js"
     ></script>
+  </div>
   </body>
 </html>
